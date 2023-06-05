@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ Hamster- Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-sharp fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>15:33</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-sharp fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Hello Kitty</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span class="alt-header__column-bar"
+          ><i class="fa-solid fa-bars fa-lg"></i
+        ></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, June 5, 2023</div>
+
+      <div class="message-row message-row-other">
+        <img src="img/hellokitty.jpeg" />
+        <div class="message-row__content">
+          <span class="message__author">Hello Kitty</span>
+          <div class="message__info">
+            <span class="message__bubble">매일매일이 행복이야💗</span>
+            <span class="message__time">18:16</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">어떤 게 가장 행복해?</span>
+            <span class="message__time">19:37</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row-other">
+        <img src="img/hellokitty.jpeg" />
+        <div class="message-row__content">
+          <span class="message__author">Hello Kitty</span>
+          <div class="message__info">
+            <span class="message__bubble">쿠키 만들기랑 피아노치기💗</span>
+            <span class="message__time">20:59</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row-other">
+        <img src="img/hellokitty.jpeg" />
+        <div class="message-row__content">
+          <span class="message__author">Hello Kitty</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >난 엄마가 만들어준 애플파이가 좋아</span
+            >
+            <span class="message__time">20:59</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" />
+        <i class="fa-regular fa-face-smile"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/89bc201775.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

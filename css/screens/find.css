@@ -1,0 +1,121 @@
+.recommended-friends {
+    margin: 25px 0px 23px 0px;
+    padding: 23px 0px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+}
+.recommended-friends__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.recommended-friends span {
+    margin: 100px 0px;
+    text-align: center;
+    display: block;
+    font-size: 17px;
+    color: var(--main-color);
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.open-chat__header span {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.open-post__title {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.open-post__hashtags {
+    font-size: 14.5px;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.open-post__members {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+.open-post__members img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.open-post__member-count {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+.open-post__members .divider {
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0px 6px;
+}
+.open-post__member-status {
+    color: #FF7ACB;
+    font-size: 14px;
+}
+.open-post__photo {
+    position: relative;
+}
+.open-post__photo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.open-post__heart-count {
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;;
+}
+.open-post__heart-count i {
+    margin-top: 2px;
+}
+.open-post__heart-count span {
+    margin-left: 3px;
+}
+.open-post__add {
+    margin-top: 15px;
+}
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: pink;
+        transform: scale(1.5);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+
+.open-post__photo:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}

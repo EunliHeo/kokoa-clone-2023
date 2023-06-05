@@ -1,0 +1,39 @@
+.settings__setting {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.settings__setting i {
+    margin-right: 18px;
+    font-size: 22px;
+}
+.settings__setting--border {
+    padding-bottom: 40px;
+    border-bottom: var(--main-border);
+    margin-bottom: 15px;
+}
+.settings__setting-column:last-child {
+    opacity: 0.5;
+}
+.settings__setting-column-new {
+    position: relative;
+}
+.settings__setting-new {
+    font-size: 10px;
+    font-weight: 600;
+    bottom: 0px;
+    left: 130px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 125px;
+}
